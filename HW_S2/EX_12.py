@@ -6,10 +6,17 @@
 
 #  4 4 -> 2 2 5 6 -> 2 3
 
-S=int(input("введите сумму чисел:"))
-P=int(input("введите произведение чисел:"))
+# S=int(input("введите сумму чисел:"))
+# P=int(input("введите произведение чисел:"))
 
-for i in range(S):
-    for j in range(P):
-        if S == i + j and P == i * j:
-            print(i, j)
+# for i in range(S):
+#     for j in range(P):
+#         if S == i + j and P == i * j:
+#             print(i, j)
+
+# x=int(input("введите сумму чисел:"))
+# y=int(input("введите произведение чисел:"))
+
+# for i in range(x):
+#     if (x-i)*i==y:
+#         print(i, x-i)
