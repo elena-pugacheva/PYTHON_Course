@@ -31,8 +31,7 @@ print(list1)
 
 m=int(input('введите m: '))
 list2 = [randint(1,10) for i in range(m)]
-print()
+print(list2)
 
 list3=((set(list1)).union(set(list2)))
-list3.sort()
 print(list3)
