@@ -10,10 +10,24 @@
 # которое может собрать за один заход собирающий модуль,
 # находясь перед некоторым кустом заданной во входном файле грядки.
 
-from random import randint
-
-N=int(input("введите количество кустов: "))
-array = []
+N=int(input("введите количество кустов: "))     
+array = list()
 for i in range(N):
-    array.append(randint(0, 100))
+    x=int(input())
+    array.append(x)
 print(array)
+
+array2=list()
+for i in range (len(array)-1):
+    array2.append(array[i]+array[i-1]+array[i+1])
+array2.append(array[-2]+array[-1]+array[0])
+print(array2)
+
+max=array2[i]
+for i in range (len(array2)-1):
+    if (array2[i+1])>max:
+        max=array2[i+1]
+print(max)
+    
+
+    
