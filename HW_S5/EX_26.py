@@ -3,3 +3,13 @@
 
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8 
+
+a = int(input(' Введите число A: '))
+n = int(input(' Введите число B: '))
+
+def Pov(a, n):
+    if (n == 1):
+        return a
+    return a * Pov(a, n-1)
+
+print(Pov(a, n))
