@@ -11,6 +11,19 @@
 # 6
 # 4 15 43 1 15 1 (каждое число вводится с новой строки)
 
+# def InputArray(size):
+#     array=[]
+#     for i in range(size):
+#         array.append(int(input()))
+#     return array
+
+# N=int(input('Введите размер первого массива: '))
+# array1=InputArray(N)
+# M=int(input('Введите размер второго массива: '))
+# array2=InputArray(M)
+# print(array1)
+# print(array2)
+# print([i for i in array1 if i not in array2])
 
 
 # Задача №41. Решение в группах
@@ -27,6 +40,15 @@
 # Вывод: Вывод:
 # 0 2
 # (каждое число вводится с новой строки)
+
+from def_inputArray import InputArray
+from def_findN import FindN
+
+N=int(input("Введите размер массива: "))
+array_1=InputArray(N)
+print(array_1)
+print(FindN(array_1))
+
 
 
 
@@ -58,3 +80,19 @@
 # пару не дает).
 # Ввод: Вывод:
 # 300 220 284
+
+# def sumD(num):
+#     sum = 0
+#     for  i in range (1,num//2+1):
+#         if num%2==0:
+#             sum+=1
+#     return sum
+
+# def FrendlyNum(k):
+#     for i in range(k):
+#         for j in range(i+1,k):
+#             if sumD(i)==j and sumD(j)==i:
+#                 print((i,j))
+
+# k=int(input( "Введите число: "))
+# FrendlyNum(k)
