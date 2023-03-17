@@ -4,7 +4,7 @@ def AllChanges(line):
         match change: 
             case 1: 
                 from change1 import ChangeName
-                ChangeName(input('Введите новые ФИО: '), input('Введите новый номер: '))
+                ChangeName(line)
             case 2: 
                 from delete import DeleteName
                 DeleteName(line)
